@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d2128505.css",
+    "main.js": "/static/js/main.fec2bad9.js",
+    "static/media/pic.png": "/static/media/pic.198bd84845898c1b77e4.png",
+    "static/media/Ali_Salame_CS.pdf": "/static/media/Ali_Salame_CS.08614cd07155acbdfc20.pdf",
+    "static/media/Project2.png": "/static/media/Project2.0f39faf6936751eafe26.png",
+    "static/media/Project1.png": "/static/media/Project1.b31e2a7fa425baa374fe.png",
+    "static/media/Project3.png": "/static/media/Project3.08b6f8773bec8c7b51d3.png",
+    "static/media/Project4.png": "/static/media/Project4.5489e0cd486f2fa20557.png",
+    "static/media/blob.png": "/static/media/blob.25273b96d65307632f0d.png",
+    "static/media/Tailwind.png": "/static/media/Tailwind.d2c692023062c1b713bd.png",
+    "static/media/Load.svg": "/static/media/Load.ae03fd2c105bae9cff42ef38db3d434e.svg",
+    "static/media/React.png": "/static/media/React.b251842aae7729902c05.png",
+    "static/media/blobanimation.svg": "/static/media/blobanimation.9d966c66f64ac990563c9e053f18693b.svg",
+    "static/media/Dancing.svg": "/static/media/Dancing.2891bd4550d102327ba3fc57cd72ab21.svg",
+    "index.html": "/index.html",
+    "main.d2128505.css.map": "/static/css/main.d2128505.css.map",
+    "main.fec2bad9.js.map": "/static/js/main.fec2bad9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2128505.css",
+    "static/js/main.fec2bad9.js"
+  ]
+}
