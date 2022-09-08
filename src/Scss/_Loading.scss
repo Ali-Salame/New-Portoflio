@@ -1,0 +1,34 @@
+.Loading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    &_Animation {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        border: none;
+        color: $color-gray;
+        position: relative;
+
+        &_dance {
+            margin: 0;
+            background-color: transparent;
+        }
+        &_dance2 {
+            position: absolute;
+            bottom: -10rem;
+            left: -2rem;
+        }
+
+    }
+    
+}
+@media screen and (max-width:875px) {
+    .Loading {
+        width: auto;
+    }
+}

@@ -1,0 +1,262 @@
+@mixin  transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $color-gray;
+    align-items: center;
+    position: fixed; 
+    top: 2rem;
+    left: 10rem;
+    right: 10rem;
+    z-index: 10;
+    background: rgba(106, 44, 236, 0);
+    border-radius: 16px;
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    padding-left: 1rem;
+
+
+
+    .Logo {
+        color: $color-gray;
+        text-decoration: none;
+        font-family: 'Krona One';
+        
+    }
+    &_Nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include transition-ease();
+
+        &_Links {
+            display: flex;
+            flex-direction: row; 
+            gap: 2rem;
+            @include transition-ease();
+            li {
+                list-style: none;
+                a {
+                    color: $color-gray;
+                    text-decoration: none;
+                }
+            }
+            .active1 {
+                color: $color-red;
+            }
+        }
+        &_active {
+            display: flex;
+            flex-direction: row; 
+            gap: 2rem;
+            li {
+                list-style: none;
+                a {
+                    color: $color-gray;
+                    text-decoration: none;
+                }
+            }
+            transform: translateX(15px);
+            @include transition-ease();
+            opacity: 0;
+            .active1 {
+                color: $color-red;
+            }
+
+        }
+
+        &_lines {
+            margin-left: 5rem;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            &_Line1 {
+                position: absolute;
+                width: 1px;
+                height: 60px;
+                background-color: $color-gray;
+                top: 0px;
+                left: 30px;
+                transform: rotate(90deg);
+                @include transition-ease;
+            }
+            &_Line2 {
+                position: absolute;
+                width: 1px;
+                height: 50px;
+                background-color: $color-gray;
+                bottom: 10px;
+                left: 24px;
+                // transform: rotate(150deg);
+                transform: rotate(90deg);
+                @include transition-ease;
+                
+            }
+            &_Line3 {
+                position: absolute;
+                width: 1px;
+                height: 60px;
+                background-color: $color-gray;
+                top: 0px;
+                left: 0px;
+                transform: rotate(20deg);
+                @include transition-ease;
+            }
+            &_Line4 {
+                position: absolute;
+                width: 1px;
+                height: 50px;
+                background-color: $color-gray;
+                bottom: 0px;
+                left: 0px;
+                transform: rotate(150deg);
+                @include transition-ease;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:875px) {
+    .NavBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: $color-gray;
+        align-items: center;
+        position: fixed; 
+        top: 2rem;
+        left: 1rem;
+        right: 1rem;
+        z-index: 10;
+        max-width: 100%;
+        
+
+
+
+        background: rgba(106, 44, 236, 0);
+        border-radius: 16px;
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+    
+    
+    
+        .Logo {
+            color: $color-gray;
+            text-decoration: none;
+            font-family: 'Krona One';
+            font-size: 16px;
+            white-space: nowrap;
+            
+        }
+        &_Nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @include transition-ease();
+            position: absolute;
+            right: 0rem;
+            padding-right: 2rem;
+            top: -1.5rem;          
+    
+            &_Links {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                z-index: 105;
+                position: fixed;
+                top: -4rem;
+                right: -1rem;
+                background: rgba(9, 3, 20, 0.8);
+                border-radius: 16px;
+                backdrop-filter: blur(100px);
+                -webkit-backdrop-filter: blur(6.1px);
+                width: 60vw;
+                height: 100vh;
+                padding-top: 3rem;
+                transition: all 2s ease-in-out;
+                
+
+                li {
+                    list-style: none;
+                    transition: all 2s ease-in-out;
+                    transform: translateY(90deg);
+                    
+                    a {
+                        color: $color-gray;
+                        text-decoration: none;
+                        text-align: center;
+                        transition: all 2s ease-in-out;
+                    }
+                }
+                .active1 {
+                    color: $color-red;
+                }
+            }
+            &_active {
+                display: none;
+                @include transition-ease();
+            }
+    
+            &_lines {
+                position: relative;
+                width: 25px;
+                height: 50px;
+                cursor: pointer;
+                z-index: 106;
+                &_Line1 {
+                    position: absolute;
+                    width: 1px;
+                    height: 60px;
+                    background-color: $color-gray;
+                    top: 0px;
+                    left: 30px;
+                    // transform: rotate(20deg);
+                    transform: rotate(90deg);
+                    @include transition-ease;
+                }
+                &_Line2 {
+                    position: absolute;
+                    width: 1px;
+                    height: 50px;
+                    background-color: $color-gray;
+                    bottom: 10px;
+                    left: 24px;
+                    // transform: rotate(150deg);
+                    transform: rotate(90deg);
+                    @include transition-ease;
+                    
+                }
+                &_Line3 {
+                    position: absolute;
+                    width: 1px;
+                    height: 60px;
+                    background-color: $color-gray;
+                    top: 0px;
+                    left: 0px;
+                    transform: rotate(20deg);
+                    @include transition-ease;
+                }
+                &_Line4 {
+                    position: absolute;
+                    width: 1px;
+                    height: 50px;
+                    background-color: $color-gray;
+                    bottom: 0px;
+                    left: 0px;
+                    transform: rotate(150deg);
+                    @include transition-ease;
+                }
+            }
+        }
+        
+    }
+    
+}
+

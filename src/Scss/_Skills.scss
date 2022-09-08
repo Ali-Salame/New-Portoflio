@@ -1,0 +1,167 @@
+.Skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+    padding-top: 6rem;
+    position: relative;
+    background: rgb(106,44,236);
+    background: linear-gradient(180deg, rgba(106,44,236,0.3) 0%, rgba(0,0,0,1) 60%);
+
+    &_Top {
+        color: $color-gray;
+        font-size: 64px;
+        font-family: 'Krona One';
+        margin-left: 10rem;
+
+        &_line {
+            position: relative;
+            margin-top: 2rem;
+            width: 30px;
+            height: 30px;
+    
+            .line1 {
+                width: 3px;
+                height: 58px;
+                background-color: $color-red;
+                transform: rotateZ(90deg);
+                margin-left: 1.8rem;
+                position: absolute;
+                top: -20px;
+    
+            }
+            .line2 {
+                width: 3px;
+                height: 58px;
+                transform: rotateZ(90deg);
+                background-color: $color-red;
+                margin-left: 2.8rem;
+                position: absolute;
+                top: -10px;
+    
+            }
+        }
+    }
+
+    &_Icons {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5rem;
+        gap: 5rem;
+        &_Iconl {
+            cursor: pointer;
+            margin-top: 2rem;
+            width: 100px;
+            height: 100px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &_Iconler {
+            cursor: pointer;
+            margin-top: -4rem;
+            width: 100px;
+            height: 100px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &_Iconle {
+            cursor: pointer;
+            margin-top: 4rem;
+            width: 100px;
+            height: 100px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &_Iconm {
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+        .react:hover::after {
+            margin-top: 1rem;
+            content: 'React.js';
+            color: white;
+            display: block;
+            text-align: center ;
+        }
+        .tw:hover::after {
+            margin-top: 1rem;
+            content: 'TailWind';
+            color: white;
+            display: block;
+            text-align: center ;
+        }
+        .js:hover::after {
+            margin-top: 1rem;
+            content: 'JavaScript';
+            color: white;
+            display: block;
+            text-align: center ;
+        }
+        .html:hover::after {
+            margin-top: 1rem;
+            content: 'HTML5';
+            color: white;
+            display: block;
+            text-align: center ;
+        }
+        .css:hover::after {
+            margin-top: 1rem;
+            content: 'CSS';
+            color: white;
+            display: block;
+            text-align: center ;
+        }
+        .sass:hover::after {
+            margin-top: 1rem;
+            content: 'SCSS';
+            color: white;
+            display: block;
+            text-align: center ;
+        }
+        .bs:hover::after {
+            margin-top: 1rem;
+            content: 'BootStrap';
+            color: white;
+            display: block;
+            text-align: center ;
+        }
+
+
+    }
+    &_up {
+        position: absolute;
+        bottom: 8rem;
+        right: 2rem;
+        cursor: pointer;
+
+    }
+    &_up:hover::after {
+        content: 'Home';
+        color: $color-gray;
+        background-color: black;
+        position: absolute;
+        bottom: -20px;
+        left: 5px;
+    }
+   
+}
+@media screen and (min-width: 1400px) {
+    .Skills_up {
+        bottom: 10rem;
+    }
+}

@@ -1,0 +1,236 @@
+.Contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2rem;
+    padding-top: 6rem;
+    position: relative;
+    background: rgb(106,44,236);
+    background: linear-gradient(180deg, rgba(106,44,236,0.3) 0%, rgba(0,0,0,1) 60%);
+    color: $color-gray;
+
+    &_Left {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 50vw;
+
+        &_Top {
+            color: $color-gray;
+            font-size: 64px;
+            font-family: 'Krona One';
+            margin-left: 10rem;
+            position: relative;
+    
+            span {
+                display: block;
+                color: $color-red;
+            }
+    
+            &_line {
+                position: relative;
+                margin-top: 2rem;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+        
+                .line1 {
+                    width: 3px;
+                    height: 58px;
+                    background-color: $color-red;
+                    transform: rotateZ(90deg);
+                    margin-left: 1.8rem;
+                    position: absolute;
+                    top: -20px;
+        
+                }
+                .line2 {
+                    width: 3px;
+                    height: 58px;
+                    transform: rotateZ(90deg);
+                    background-color: $color-red;
+                    margin-left: 2.8rem;
+                    position: absolute;
+                    top: -10px;
+        
+                }
+            }
+        }
+
+        &_Mid {
+            
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            &_container{
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                margin-left: 4rem;
+
+                &_img {
+                    cursor: pointer;
+                    img {
+                        width: 65px;
+                        height: 65px;
+                    }
+                }
+            }
+        }
+
+        &_Bot {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            img {
+                width: 400px;
+                height: 200px;
+                
+            }
+            button {
+                position:absolute;
+                left: 40%;
+                top: 45%;
+                background-color: transparent;
+                border: none;
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-family: 'Krona One';
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+
+    &_Right {
+        padding-top: 3rem;
+        margin-right: 3rem;
+        &_container {
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-size: 24px;
+            font-family: 'Krona One';
+            align-items: center;
+            &_Fn {
+                display: flex;
+                align-items: center;
+                &_inp {
+                    width: 390px;
+                    height: 40px;
+                    background: rgba(217, 217, 217, 0.25);
+                    border: 2px solid #FF395C;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 24px;
+                }
+                span {
+                    width:203px;
+                    margin-right: 10px;
+                }
+                &_At {
+                    display: block;
+                    margin-top: 1rem;
+                    width: 600px;
+                    height: 230px;
+                    background: rgba(217, 217, 217, 0.25);
+                    border: 2px solid #FF395C;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 24px;
+                }
+            }
+            &_Submit {
+                background-color: $color-red;
+                width: 100.92px;
+                height: 50px;
+                border-radius: 10px;
+                color: black;
+                margin-left: auto;
+                font-size: 24px;
+                font-family: 'Krona One';
+            }
+            &_Submit:active {
+                background-color: black;
+                color: white;
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .Contact {
+        padding-top: 15rem;
+        .Contact_Left_Bot {
+            img {
+                width: 600px;
+                height: 300px;
+            }
+            button {
+                left: 45%;
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 875px) {
+    .Contact {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        padding-top: 6rem;
+        background-color: transparent;
+
+        &_Left {
+            width: auto;
+            &_Top {
+                font-size: 40px;
+                margin-left: 2rem;
+            }
+            &_Mid {
+                justify-content: center;
+                &_container {
+                    margin-left: 0;
+                }
+            }
+
+
+        }
+        &_Right {
+            margin: 0;
+            margin-bottom: 2rem;
+            padding-top: 1rem;
+            &_container {
+                font-size: 20px;
+                width: 390px;
+                margin: auto;
+                &_Fn {
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    align-items:flex-start;
+                    &_inp {
+                        min-width: 200px;
+                        width: 390px;
+                    }
+                    &_At {
+                        min-width: 200px;
+                        width: 390px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

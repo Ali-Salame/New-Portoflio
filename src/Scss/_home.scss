@@ -1,0 +1,254 @@
+
+.Home {
+    width: 100vw;
+    height: 80vh;
+    margin: 0;
+    justify-content: start;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    color: $color-gray;
+    position: relative;
+    background: rgb(106,44,236);
+    background: linear-gradient(180deg, rgba(106,44,236,0.3) 0%, rgba(0,0,0,1) 60%);
+    z-index: 1;
+
+    &_Left {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 12%;
+        margin-left: 10rem;
+        z-index: 10;
+
+        &_Top {
+            font-size: 64px;
+            font-family: 'Krona One';
+
+            span {
+                display: block;
+                color: $color-red;
+            }
+        }
+        &_Mid {
+            position: relative;
+
+            .line1 {
+                width: 3px;
+                height: 58px;
+                background-color: $color-red;
+                transform: rotateZ(90deg);
+                margin-left: 1.8rem;
+                position: absolute;
+                top: -20px;
+ 
+            }
+            .line2 {
+                width: 3px;
+                height: 58px;
+                background-color: $color-red;
+                transform: rotateZ(90deg);
+                margin-left: 2.8rem;
+                position: absolute;
+                top: -10px;
+
+            }
+        }
+        &_Bot {
+            margin-top: 1rem;
+            font-family: 'Lexend Giga', sans-serif;
+            font-size: 36px;
+        }
+    }
+    &_Right {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 0;
+    }
+
+    .test {
+        width: 190px;
+        height: 40px;
+        position: absolute;
+        bottom: -110px;
+        right: 10px;
+        background-color: black;
+
+    }
+    .test:hover::after {
+        content: 'You Found me!';
+    }
+    .HSkills {
+        display: none;
+    }
+
+
+}
+.Scroll {
+    position: absolute;
+    bottom: -55px;
+    left: -20px;
+    transform: rotateZ(90deg);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 16px;
+
+
+    .linesc {
+        width: 2px;
+        height: 60px;
+        background-color: white;
+        transform: rotateZ(90deg);
+    }
+
+}
+
+@media screen and (max-width:875px) {
+    .Home {
+        width: auto;
+        height: auto;
+        padding-top: 3rem;
+        justify-content: center;
+        flex-direction: column;max-width: 427px;
+        background: none;
+        margin: auto;
+        &_Left {
+            margin-left: 4rem;
+            padding-top: 6rem;
+            &_Top {
+                font-size: 40px;
+
+            }
+            &_Bot {
+                font-size: 20px;
+            }
+        }
+        &_Right {
+            display:none;
+        }
+        .HSkills {
+            height: auto;
+            display: block;
+            
+            gap: 2rem;
+            position: relative;
+            width: 100vw;
+            &_Icons {
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 5rem;
+                gap: 1rem;
+                
+                &_Iconle {
+                    cursor: pointer;
+                    margin-top: 3rem;
+                    width: 55px;
+                    height: 55px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &_Iconm {
+                    cursor: pointer;
+                    width: 55px;
+                    height: 55px;
+                    margin-top: 1rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &_Iconl {
+                    cursor: pointer;
+                    margin-top: 2rem;
+                    width: 55px;
+                    height: 55px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &_Iconler {
+                    cursor: pointer;
+                    margin-top: 0rem;
+                    width: 55px;
+                    height: 55px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+
+                
+                .react:hover::after {
+                    margin-top: 1rem;
+                    content: 'React.js';
+                    color: white;
+                    display: block;
+                    text-align: center ;
+                }
+                .tw:hover::after {
+                    margin-top: 1rem;
+                    content: 'TailWind';
+                    color: white;
+                    display: block;
+                    text-align: center ;
+                }
+                .js:hover::after {
+                    margin-top: 1rem;
+                    content: 'JavaScript';
+                    color: white;
+                    display: block;
+                    text-align: center ;
+                }
+                .html:hover::after {
+                    margin-top: 1rem;
+                    content: 'HTML5';
+                    color: white;
+                    display: block;
+                    text-align: center ;
+                }
+                .css:hover::after {
+                    margin-top: 1rem;
+                    content: 'CSS';
+                    color: white;
+                    display: block;
+                    text-align: center ;
+                }
+                .sass:hover::after {
+                    margin-top: 1rem;
+                    content: 'SCSS';
+                    color: white;
+                    display: block;
+                    text-align: center ;
+                }
+                .bs:hover::after {
+                    margin-top: 1rem;
+                    content: 'BootStrap';
+                    color: white;
+                    display: block;
+                    text-align: center ;
+                }
+        
+        
+            }
+           
+        }
+    
+    }
+    .Scroll {
+        display: none;
+    }
+    
+
+
+
+}
