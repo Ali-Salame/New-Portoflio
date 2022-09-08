@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 2rem;
+    gap: 1rem;
     padding-top: 6rem;
     position: relative;
     background: rgb(106,44,236);
@@ -11,7 +11,7 @@
     
     &_Top {
         color: $color-gray;
-        font-size: 64px;
+        font-size: 45px;
         font-family: 'Krona One';
         margin-left: 10rem;
         position: relative;
@@ -32,7 +32,7 @@
                 transform: rotateZ(90deg);
                 margin-left: 1.8rem;
                 position: absolute;
-                top: -20px;
+                top: -40px;
     
             }
             .line2 {
@@ -42,22 +42,13 @@
                 background-color: $color-red;
                 margin-left: 2.8rem;
                 position: absolute;
-                top: -10px;
+                top: -30px;
     
             }
         }
         &_Next {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            right: 4rem;
-            top: 5rem;
-            cursor: pointer;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
+            display: none;
+            
         }
     }
     &_none {
@@ -75,7 +66,7 @@
         position: relative;
 
         &_imag {
-            width: 425px;
+            width: 400px;
             border: 1px  solid $color-red;
             padding: 2rem;
             position: relative;
@@ -159,7 +150,7 @@
         }
         &_Text {
             width: 360px;
-            font-size: 24px;
+            font-size: 20px;
             font-family: 'Lexend Giga';
             h1 {
                 margin: 0;
@@ -230,6 +221,9 @@
     .Projects_up {
         bottom: 10rem;
     }
+    .Projects_Pages_Text {
+        font-size: 24px;
+    }
 }
 @media screen and (max-width: 875px) {
     .Projects {
@@ -245,11 +239,15 @@
             margin-left: 2rem;
 
             &_Next {
+                position: absolute;
                 top: -1rem;
                 right: 1rem;
                 width: 80px;
                 height: 80px;
-            
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
         &_Pages {

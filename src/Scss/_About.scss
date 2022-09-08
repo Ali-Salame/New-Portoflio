@@ -14,7 +14,7 @@
     &_left {
         margin-left: 10rem;
         color: $color-red;
-        font-size: 64px;
+        font-size: 45px;
         font-family: 'Krona One';
         span {
             color: $color-gray;
@@ -52,7 +52,7 @@
             width: 437px;
             height: 465px;
             font-family: 'Lexend Giga';
-            font-size: 20px;
+            font-size: 18px;
             color: $color-gray;
             margin-top: 5rem;
 
@@ -70,24 +70,25 @@
     &_image {
         width: 916px;
         height: 710px;
-        margin-left: 2rem;
+        margin-left: 5rem;
         &_container {
             position: relative;
             width: 100%;
+            height: auto;
 
             .image1 {
-                width: 80%;
+                width: 60%;
                 height: auto;
                 position: absolute;
                 z-index: 4;
                 top: 2rem;
             }
             .image2 {
-                width: 80%;
+                width: 60%;
                 height: auto;
                 position: absolute;
                 z-index: 3;
-                top: -3rem;
+                top: -1rem;
 
             }
         }
@@ -116,6 +117,22 @@
 
     .About_up {
         bottom: -3rem;
+    }
+    .About {
+        &_left {
+            font-size: 64px;           
+        }
+        &_image {
+            &_container {
+                .image1 {
+                    width: 70%;
+                }
+                .image2 {
+                    width: 70%;
+                }
+            }
+        }
+
     }
 }
 @media screen and (max-width: 875px) {

@@ -228,9 +228,9 @@
 }
 .Home {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   margin: 0;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -249,7 +249,7 @@
   z-index: 10;
 }
 .Home_Left_Top {
-  font-size: 64px;
+  font-size: 50px;
   font-family: "Krona One";
 }
 .Home_Left_Top span {
@@ -280,7 +280,7 @@
 .Home_Left_Bot {
   margin-top: 1rem;
   font-family: "Lexend Giga", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
 }
 .Home_Right {
   position: absolute;
@@ -304,14 +304,14 @@
 }
 
 .Scroll {
-  position: absolute;
-  bottom: -55px;
-  left: -20px;
+  position: fixed;
+  bottom: 2rem;
+  left: -3rem;
   transform: rotateZ(90deg);
   display: flex;
   align-items: center;
   gap: 40px;
-  font-size: 16px;
+  font-size: 12px;
 }
 .Scroll .linesc {
   width: 2px;
@@ -465,7 +465,7 @@
 .About_left {
   margin-left: 10rem;
   color: #FF395C;
-  font-size: 64px;
+  font-size: 45px;
   font-family: "Krona One";
 }
 .About_left span {
@@ -499,7 +499,7 @@
   width: 437px;
   height: 465px;
   font-family: "Lexend Giga";
-  font-size: 20px;
+  font-size: 18px;
   color: #B5B5B5;
   margin-top: 5rem;
 }
@@ -515,25 +515,26 @@
 .About_image {
   width: 916px;
   height: 710px;
-  margin-left: 2rem;
+  margin-left: 5rem;
 }
 .About_image_container {
   position: relative;
   width: 100%;
+  height: auto;
 }
 .About_image_container .image1 {
-  width: 80%;
+  width: 60%;
   height: auto;
   position: absolute;
   z-index: 4;
   top: 2rem;
 }
 .About_image_container .image2 {
-  width: 80%;
+  width: 60%;
   height: auto;
   position: absolute;
   z-index: 3;
-  top: -3rem;
+  top: -1rem;
 }
 .About_up {
   position: absolute;
@@ -553,6 +554,15 @@
 @media screen and (min-width: 1400px) {
   .About_up {
     bottom: -3rem;
+  }
+  .About_left {
+    font-size: 64px;
+  }
+  .About_image_container .image1 {
+    width: 70%;
+  }
+  .About_image_container .image2 {
+    width: 70%;
   }
 }
 @media screen and (max-width: 875px) {
@@ -618,7 +628,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 2rem;
+  gap: 1rem;
   padding-top: 6rem;
   position: relative;
   background: rgb(106, 44, 236);
@@ -627,7 +637,7 @@
 }
 .Projects_Top {
   color: #B5B5B5;
-  font-size: 64px;
+  font-size: 45px;
   font-family: "Krona One";
   margin-left: 10rem;
   position: relative;
@@ -648,7 +658,7 @@
   transform: rotateZ(90deg);
   margin-left: 1.8rem;
   position: absolute;
-  top: -20px;
+  top: -40px;
 }
 .Projects_Top_line .line2 {
   width: 3px;
@@ -657,19 +667,10 @@
   background-color: #FF395C;
   margin-left: 2.8rem;
   position: absolute;
-  top: -10px;
+  top: -30px;
 }
 .Projects_Top_Next {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  right: 4rem;
-  top: 5rem;
-  cursor: pointer;
-}
-.Projects_Top_Next img {
-  width: 100%;
-  height: 100%;
+  display: none;
 }
 .Projects_none {
   display: none;
@@ -683,7 +684,7 @@
   position: relative;
 }
 .Projects_Pages_imag {
-  width: 425px;
+  width: 400px;
   border: 1px solid #FF395C;
   padding: 2rem;
   position: relative;
@@ -763,7 +764,7 @@
 }
 .Projects_Pages_Text {
   width: 360px;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Lexend Giga";
 }
 .Projects_Pages_Text h1 {
@@ -826,6 +827,9 @@
   .Projects_up {
     bottom: 10rem;
   }
+  .Projects_Pages_Text {
+    font-size: 24px;
+  }
 }
 @media screen and (max-width: 875px) {
   .Projects {
@@ -842,10 +846,15 @@
     margin-left: 2rem;
   }
   .Projects_Top_Next {
+    position: absolute;
     top: -1rem;
     right: 1rem;
     width: 80px;
     height: 80px;
+  }
+  .Projects_Top_Next img {
+    width: 100%;
+    height: 100%;
   }
   .Projects_Pages {
     flex-direction: column;
@@ -909,7 +918,7 @@
 }
 .Contact_Left_Top {
   color: #B5B5B5;
-  font-size: 64px;
+  font-size: 45px;
   font-family: "Krona One";
   margin-left: 10rem;
   position: relative;
@@ -920,7 +929,7 @@
 }
 .Contact_Left_Top_line {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 30px;
   height: 30px;
   display: flex;
@@ -946,7 +955,7 @@
   top: -10px;
 }
 .Contact_Left_Mid {
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -997,7 +1006,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Krona One";
   align-items: center;
 }
@@ -1036,7 +1045,7 @@
   border-radius: 10px;
   color: black;
   margin-left: auto;
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Krona One";
 }
 .Contact_Right_container_Submit:active {
@@ -1117,7 +1126,7 @@
 }
 .Skills_Top {
   color: #B5B5B5;
-  font-size: 64px;
+  font-size: 50px;
   font-family: "Krona One";
   margin-left: 10rem;
 }
@@ -1150,8 +1159,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 5rem;
-  gap: 5rem;
+  margin-top: 2rem;
+  gap: 3rem;
 }
 .Skills_Icons_Iconl {
   cursor: pointer;

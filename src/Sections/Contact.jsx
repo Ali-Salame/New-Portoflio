@@ -15,27 +15,30 @@ const Contact = () => {
   let Email = document.getElementById('email')
   let Msg = document.getElementById('msg')
   const MySwal = withReactContent(Swal)
+  function reset(){
+    Name.value = '';
+    Email.value = '';
+    Msg.value = '';
+  }
 
   
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    MySwal.fire({
+      title: <p>Massege Sent!</p>,
+      didOpen: () => {
+        // `MySwal` is a subclass of `Swal` with all the same instance & static methods
+      },
+    })
     emailjs.sendForm('service_1afhh5t', 'template_uumr18n', form.current, 'aLNtas3TXrHXp_Pmo')
       .then((result) => {
           console.log(result.text);
-          Name.value = '';
-          Email.value = '';
-          Msg.value = '';
-          MySwal.fire({
-            title: <p>Massege Sent!</p>,
-            didOpen: () => {
-              // `MySwal` is a subclass of `Swal` with all the same instance & static methods
-            },
-          })
-            
+          reset()
       }, (error) => {
           console.log(error.text);
+
       });
   };
   return (
