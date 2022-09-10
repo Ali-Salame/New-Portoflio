@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/New-Portoflio/static/css/main.a90f8447.css",
-    "main.js": "/New-Portoflio/static/js/main.9d349217.js",
+    "main.js": "/New-Portoflio/static/js/main.6f9809af.js",
     "static/media/pic.png": "/New-Portoflio/static/media/pic.198bd84845898c1b77e4.png",
     "static/media/Ali_Salame_CS.pdf": "/New-Portoflio/static/media/Ali_Salame_CS.08614cd07155acbdfc20.pdf",
     "static/media/Project2.png": "/New-Portoflio/static/media/Project2.0f39faf6936751eafe26.png",
@@ -16,10 +16,10 @@
     "index.html": "/New-Portoflio/index.html",
     "static/media/Dancing.svg": "/New-Portoflio/static/media/Dancing.2891bd4550d102327ba3fc57cd72ab21.svg",
     "main.a90f8447.css.map": "/New-Portoflio/static/css/main.a90f8447.css.map",
-    "main.9d349217.js.map": "/New-Portoflio/static/js/main.9d349217.js.map"
+    "main.6f9809af.js.map": "/New-Portoflio/static/js/main.6f9809af.js.map"
   },
   "entrypoints": [
     "static/css/main.a90f8447.css",
-    "static/js/main.9d349217.js"
+    "static/js/main.6f9809af.js"
   ]
 }
