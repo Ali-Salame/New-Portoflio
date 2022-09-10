@@ -63,7 +63,7 @@ const Contact = () => {
         </div>
           <div className='Contact_Left_Bot animate__animated animate__fadeInLeft animate__slower'>
             <img src={blob} alt="" />
-            <button><a href={file} download='Ali Salame'>Resume</a></button>
+            <button><a href='https://drive.google.com/file/d/1-B15fcCoIoh_PyKAaVwBcR6jDAbkxkoQ/view' target='_blank'>Resume</a></button>
           </div>
       </div>
       <div className="Contact_Right animate__animated animate__fadeInRight">

@@ -1,4 +1,4 @@
-import React from 'react'
+import {React , useState, useEffect} from 'react'
 import HTML from '../Img/HTML.png'
 import CSS from '../Img/CSS.png'
 import Js from '../Img/Js.png'
@@ -8,13 +8,15 @@ import BootStrap from '../Img/BootStrap.png'
 import Tailwind from '../Img/Tailwind.png'
 import Up from '../Img/Up.png'
 import Tilt from 'react-parallax-tilt';
+import { TypeAnimation } from 'react-type-animation';
 import 'animate.css';
 
 
 
 
 const Home = (Props) => {
-  let style = {display: Props.CurrentPage === 1 ? 'flex' : 'none'}
+    let style = {display: Props.CurrentPage === 1 ? 'flex' : 'none'}
+
   return (
     <section className='Home' id='Home' style={style}>
       <div className='Home_Left'>
@@ -24,11 +26,25 @@ const Home = (Props) => {
           <div className='line2'></div>
         </div>
         <div className='Home_Left_Bot animate__animated animate__fadeInBottomLeft'>
-          Front-End Developer/ 
-          <span style={{display: 'block'}}>Physiotherapist</span>
+            <TypeAnimation
+                // Same String at the start will only be typed once, initially
+                sequence={[
+                'Front-End Developer...',
+                3000,
+                'React.js Developer...',
+                3000,
+                'Web Developer...',
+                3000,
+                ]}
+                speed={20} // Custom Speed from 1-99 - Default Speed: 40
+                style={{ fontSize: '30px' ,color: '#B5B5B5'}}
+                wrapper="span" // Animation will be rendered as a <span>
+                repeat={Infinity} // Repeat this Animation Sequence infinitely
+            />
+            <span style={{display:'block'}}>Physiotherapist</span>
         </div>
       </div>
-      <div className='Home_Right animate__animated animate__fadeInRight'><iframe src='https://my.spline.design/untitled-a1eba07625c1d422c597917ccf9e576e/' frameborder='0' width='100%' height='100%'></iframe></div>
+      <div className='Home_Right animate__animated animate__fadeInRight' ><iframe src='https://my.spline.design/untitled-a1eba07625c1d422c597917ccf9e576e/' frameborder='0' width='100%' height='100%'></iframe></div>
       <div className='test'></div>
       <div className='Scroll'>
         <div className='animate__animated animate__rubberBand animate__repeat-2	animate__slow'>SCROLL DOWN </div>

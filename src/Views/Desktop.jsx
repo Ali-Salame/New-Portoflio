@@ -13,6 +13,7 @@ import { useEffect,useState } from 'react';
 const Desktop = () => {
     const [NextPage, setNextPage] = useState(1)
     const [ProjNum, setProjNum] = useState(1)
+    const [Change, setChange] = useState(true)
 
     const home = () => {
         setNextPage(1);
@@ -34,7 +35,7 @@ const Desktop = () => {
   return (
     <div onWheel={handleScroll}>
         <Navbar setNextPage={setNextPage} setProjNum={setProjNum} CurrentPage={NextPage}/>
-        <Home  CurrentPage={NextPage}/>
+        <Home  CurrentPage={NextPage} Change={Change} setChange={setChange}/>
         {NextPage === 2 && <About  func={() => home()}/>}
         {NextPage === 3 && <Skills  func={() => home()}/>}
         {NextPage === 4 && <Projects ProjNum={ProjNum} setProjNum={setProjNum} func={() => home()}/>}
