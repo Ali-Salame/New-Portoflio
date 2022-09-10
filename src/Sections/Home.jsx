@@ -30,18 +30,18 @@ const Home = (Props) => {
                 // Same String at the start will only be typed once, initially
                 sequence={[
                 'Front-End Developer...',
-                3000,
+                4000,
                 'React.js Developer...',
-                3000,
-                'Web Developer...',
-                3000,
+                4000,
+                'Web Developer.',
+                2000,
                 ]}
                 speed={20} // Custom Speed from 1-99 - Default Speed: 40
                 style={{ fontSize: '30px' ,color: '#B5B5B5'}}
                 wrapper="span" // Animation will be rendered as a <span>
                 repeat={Infinity} // Repeat this Animation Sequence infinitely
             />
-            <span style={{display:'block'}}>Physiotherapist</span>
+            
         </div>
       </div>
       <div className='Home_Right animate__animated animate__fadeInRight' ><iframe src='https://my.spline.design/untitled-a1eba07625c1d422c597917ccf9e576e/' frameborder='0' width='100%' height='100%'></iframe></div>

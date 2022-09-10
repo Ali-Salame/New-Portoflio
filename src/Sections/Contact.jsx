@@ -56,9 +56,9 @@ const Contact = () => {
         <div className='Contact_Left_Mid animate__animated animate__fadeInLeft animate__slow'>
           <div>alisalamaxd@outlook.com</div>
           <div className='Contact_Left_Mid_container'>
-            <Tilt className='Contact_Left_Mid_container_img'><img src={Linkedin} alt="" /></Tilt>
-            <Tilt className='Contact_Left_Mid_container_img'><img src={Github} alt="" /></Tilt>
-            <Tilt className='Contact_Left_Mid_container_img'><img src={Twitter} alt="" /></Tilt>
+            <Tilt className='Contact_Left_Mid_container_img'><a href="https://www.linkedin.com/in/ali-salame/" target='_blank'><img src={Linkedin} alt="linkedin" /></a></Tilt>
+            <Tilt className='Contact_Left_Mid_container_img'><a href="https://github.com/heloneck" target='_blank'><img src={Github} alt="github" /></a></Tilt>
+            <Tilt className='Contact_Left_Mid_container_img'><a href="https://twitter.com/alisala71023324" target='_blank'><img src={Twitter} alt="twitter" /></a></Tilt>
           </div>
         </div>
           <div className='Contact_Left_Bot animate__animated animate__fadeInLeft animate__slower'>
